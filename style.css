@@ -1,0 +1,10 @@
+*{
+  --cor-background: #807ECE;
+  --cor-calculadora: #2D2A37;
+  --cor-operacoes: #462878;
+  --cor-texto: #ffff;
+}
+
+body{
+  background-color: var(--cor-background);
+}
