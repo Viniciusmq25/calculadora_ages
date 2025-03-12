@@ -1,6 +1,7 @@
 const resultado = document.getElementById('resultado');
 const calculo_cima = document.getElementById('calculo-cima');
 
+
 function adicionar(opNum) {
   resultado.value += opNum
 }
@@ -18,15 +19,23 @@ function apagar() {
 }
 
 function operation(op){
-  calculo_cima.innerHTML = resultado.value
+  if(op == '%'){
+    calculo_cima.innerHTML = resultado.value
   limpar()
-  calculo_cima.innerHTML += op
+    calculo_cima.innerHTML += op+"*"
+  }else{
+    calculo_cima.innerHTML = resultado.value
+    limpar()
+    calculo_cima.innerHTML += op
+  }
 } 
 
 function calcular() {
-  
-
   calculo_cima.innerHTML += resultado.value
   resultado.value = eval(calculo_cima.innerHTML)
   calculo_cima.innerHTML = ''
+}
+
+function invertion(){
+  resultado.value = resultado.value * -1
 }

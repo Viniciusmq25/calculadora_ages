@@ -19,6 +19,7 @@ body{
 .container{
   background-color: var(--cor-calculadora);
   border-radius: 48px;
+  max-width: 339px;
   padding: 50px 20px 20px 20px;
   box-shadow: 0px 10px 30px rgba(0, 0, 0, 1);
   -moz-box-shadow: 0px 10px 30px rgba(0, 0, 0, 1);
@@ -35,7 +36,6 @@ body{
   font-size: 20px;
   margin: 0;
   height: 24px;
-  
 }
 
 .container-resultado{
@@ -80,15 +80,35 @@ body{
   -webkit-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.75);
   -moz-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.75);
   box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.75);
+  cursor: pointer;
 }
 
-.op{
+.btn:active{
+  background: linear-gradient(0deg, var(--cor-calculadora) 0%, rgba(255,255,255,.05) 90%);
+  border: #373441 , 2px solid;
+  -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.75);
+}
+
+#op{
   background-color: var(--cor-operacoes);
   background: linear-gradient(0deg, rgb(95, 65, 145, 1) 0%, rgb(70, 40, 120, 1) 90%);
   border: rgb(95, 65, 145, 1) , 2px solid;
 }
 
+#op:active{
+  background: linear-gradient(0deg, rgb(70, 40, 120, 1) 0%, rgb(95, 65, 145, 1) 90%);
+  border: rgb(70, 40, 120, 1) , 2px solid;
+}
+
 #igual{
-  background: rgb(127, 69, 226);
-  border: none;
+  background-color: var(--cor-igual);
+  background: linear-gradient(0deg, rgb(127, 69, 226) 0%, rgb(97, 49, 206) 90%);
+  border: rgb(127, 69, 226) , 2px solid;
+}
+
+#igual:active{
+  background: linear-gradient(0deg, rgb(97, 49, 206) 0%, rgb(127, 69, 226) 90%);
+  border: rgb(97, 49, 206) , 2px solid;
 }
