@@ -34,6 +34,8 @@ body{
   color: var(--cor-subtexto);
   font-size: 20px;
   margin: 0;
+  height: 24px;
+  
 }
 
 .container-resultado{
@@ -42,7 +44,7 @@ body{
   align-items: center;
 }
 
-.igual-a{
+.icone-igual{
   color: var(--cor-subtexto);
   font-size: 36px;
   margin: 0;
@@ -50,10 +52,13 @@ body{
 }
 
 .calculo-resultado{
+  all: unset;
   color: var(--cor-texto);
   font-size: 36px;
   margin: 0;
   padding: 10px 0 10px 0;
+  height: 40px;
+  width: 200px;
 }
 
 .teclado{
