@@ -3,6 +3,7 @@
   --cor-calculadora: #2D2A37;
   --cor-operacoes: rgb(70, 40, 120);
   --cor-igual: rgb(127, 69, 226);
+  --cor-CE: #975DFA;
   --cor-texto: #EBEBEB;
   --cor-subtexto: #B3B3B3;
   font-family: "Rubik", sans-serif;;
@@ -36,6 +37,7 @@ body{
   font-size: 20px;
   margin: 0;
   height: 24px;
+  overflow:hidden;
 }
 
 .container-resultado{
@@ -49,6 +51,11 @@ body{
   font-size: 36px;
   margin: 0;
   font-weight: 100;
+}
+
+.CE{
+  color: var(--cor-CE);
+  
 }
 
 .calculo-resultado{
