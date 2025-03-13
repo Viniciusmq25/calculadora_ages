@@ -43,13 +43,11 @@ function calcular() {
   if (calculo_cima.innerHTML.includes('%')){
     calculo_cima.innerHTML += resultado.value;
     calculo_cima.innerHTML = calculo_cima.innerHTML.replace('%', '*');
-    console.log(calculo_cima.innerHTML);
     resultado.value = eval(calculo_cima.innerHTML) /100;
   } else{  
     calculo_cima.innerHTML += resultado.value;
     resultado.value = eval(calculo_cima.innerHTML);
   }
-  calculo_cima.innerHTML = '';
 }
 
 function invertion(){
