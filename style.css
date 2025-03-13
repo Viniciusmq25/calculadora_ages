@@ -55,7 +55,6 @@ body{
 
 .CE{
   color: var(--cor-CE);
-  
 }
 
 .calculo-resultado{
@@ -98,24 +97,24 @@ body{
   box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.75);
 }
 
-#op{
+.op{
   background-color: var(--cor-operacoes);
   background: linear-gradient(0deg, rgb(95, 65, 145, 1) 0%, rgb(70, 40, 120, 1) 90%);
   border: rgb(95, 65, 145, 1) 2px solid;
 }
 
-#op:active{
+.op:active{
   background: linear-gradient(0deg, rgb(70, 40, 120, 1) 0%, rgb(95, 65, 145, 1) 90%);
   border: rgb(70, 40, 120, 1) 2px solid;
 }
 
-#igual{
+.eq{
   background-color: var(--cor-igual);
   background: linear-gradient(0deg, rgb(127, 69, 226) 0%, rgb(97, 49, 206) 90%);
   border: rgb(127, 69, 226) 2px solid;
 }
 
-#igual:active{
+.eq:active{
   background: linear-gradient(0deg, rgb(97, 49, 206) 0%, rgb(127, 69, 226) 90%);
   border: rgb(97, 49, 206) 2px solid;
 }

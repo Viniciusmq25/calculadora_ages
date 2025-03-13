@@ -1,6 +1,6 @@
 const resultado = document.getElementById('resultado');
 const calculo_cima = document.getElementById('calculo-cima');
-const buttonequal = document.getElementById('igual');
+const botaoigual = document.getElementById('igual');
 
 function zerar(){
   resultado.value = '0';
@@ -55,7 +55,6 @@ function invertion(){
   resultado.value = resultado.value * -1;
 }
 
-//quando enter é clicado, chama a função calcular
 document.addEventListener('keydown', function(event){
   if (event.key == 'Enter'){
     calcular();
