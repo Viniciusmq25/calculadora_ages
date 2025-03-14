@@ -9,10 +9,20 @@ function zerar(){
 zerar();
 
 function adicionar(opNum) {
-  if (resultado.value == '0'){
-    resultado.value = '';
+  if(opNum == '.' && resultado.value.includes('.')){
+    return;
   }
-  resultado.value += opNum;
+  if (resultado.value == '0'){
+    if (opNum == '.'){
+      resultado.value += opNum;
+    }else{
+      resultado.value = '';
+      resultado.value += opNum;
+    }
+  }else{
+    resultado.value += opNum;
+  }
+  
 }
 
 function limpar() {
